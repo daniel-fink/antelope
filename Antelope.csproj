@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F764BE3A-7211-4DBF-A36B-E62BC5F90034}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Antelope</RootNamespace>
+    <AssemblyName>Antelope</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eto, Version=2.5.0.0, Culture=neutral, PublicKeyToken=552281e97c755530">
+      <HintPath>packages\RhinoCommon.6.21.19351.9141\lib\net45\Eto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GeoAPI, Version=1.7.5.0, Culture=neutral, PublicKeyToken=a1a0da7def465678">
+      <HintPath>packages\GeoAPI.Core.1.7.5\lib\net45\GeoAPI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GeoAPI.CoordinateSystems, Version=1.7.5.0, Culture=neutral, PublicKeyToken=a1a0da7def465678">
+      <HintPath>packages\GeoAPI.CoordinateSystems.1.7.5\lib\net45\GeoAPI.CoordinateSystems.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GH_IO, Version=6.21.19351.9140, Culture=neutral, PublicKeyToken=6a29997d2e6b4f97">
+      <HintPath>packages\Grasshopper.6.21.19351.9141\lib\net45\GH_IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Grasshopper, Version=6.21.19351.9140, Culture=neutral, PublicKeyToken=dda4f5ec2cd80803">
+      <HintPath>packages\Grasshopper.6.21.19351.9141\lib\net45\Grasshopper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="NetTopologySuite, Version=1.15.3.0, Culture=neutral, PublicKeyToken=f580a05016ebada1">
+      <HintPath>packages\NetTopologySuite.Core.1.15.3\lib\net45\NetTopologySuite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.CoordinateSystems, Version=1.15.3.0, Culture=neutral, PublicKeyToken=f580a05016ebada1">
+      <HintPath>packages\NetTopologySuite.CoordinateSystems.1.15.3\lib\net45\NetTopologySuite.CoordinateSystems.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1">
+      <HintPath>packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.GeoTools, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1">
+      <HintPath>packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.GeoTools.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.MsSqlSpatial, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1">
+      <HintPath>packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.MsSqlSpatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.PostGis, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1">
+      <HintPath>packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.PostGis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.ShapeFile, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1">
+      <HintPath>packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.ShapeFile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.ShapeFile.Extended, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.ShapeFile.Extended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Rhino.UI, Version=6.21.19351.9140, Culture=neutral, PublicKeyToken=552281e97c755530">
+      <HintPath>packages\RhinoCommon.6.21.19351.9141\lib\net45\Rhino.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RhinoCommon, Version=6.21.19351.9140, Culture=neutral, PublicKeyToken=552281e97c755530">
+      <HintPath>packages\RhinoCommon.6.21.19351.9141\lib\net45\RhinoCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoadShapefile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\RhinoCommon.6.21.19351.9141\build\net45\RhinoCommon.targets" Condition="Exists('packages\RhinoCommon.6.21.19351.9141\build\net45\RhinoCommon.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\RhinoCommon.6.21.19351.9141\build\net45\RhinoCommon.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\RhinoCommon.6.21.19351.9141\build\net45\RhinoCommon.targets'))" />
+    <Error Condition="!Exists('packages\Grasshopper.6.21.19351.9141\build\net45\Grasshopper.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Grasshopper.6.21.19351.9141\build\net45\Grasshopper.targets'))" />
+  </Target>
+  <Import Project="packages\Grasshopper.6.21.19351.9141\build\net45\Grasshopper.targets" Condition="Exists('packages\Grasshopper.6.21.19351.9141\build\net45\Grasshopper.targets')" />
+</Project>
