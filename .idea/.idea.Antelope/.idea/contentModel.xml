@@ -2,16 +2,42 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_Antelope.660153798.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_Antelope.-19176963.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p=".gitattributes" t="Include" />
+      <e p=".gitignore" t="Include" />
       <e p="Antelope.csproj" t="IncludeRecursive" />
       <e p="Antelope.sln" t="IncludeFlat" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="DotSpatial.chm" t="Include" />
+      <e p="geojson" t="Include">
+        <e p="nyzd.geojson" t="Include" />
+      </e>
+      <e p="Geometry" t="Include">
+        <e p="GeoGeomConversions.cs" t="Include" />
+        <e p="GeoGeomExtensions.cs" t="Include" />
+        <e p="GeoLineString.cs" t="Include" />
+        <e p="GeoPoint.cs" t="Include" />
+        <e p="GeoShape.cs" t="Include" />
+        <e p="IGeospatialGeom.cs" t="Include" />
+        <e p="ProjectionSystem.cs" t="Include" />
+      </e>
+      <e p="LICENSE" t="Include" />
       <e p="LoadShapefile.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="net472" t="Include">
+            <e p="Antelope.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="packages.config" t="Include" />
       <e p="Properties" t="Include">
         <e p="AssemblyInfo.cs" t="Include" />
       </e>
+      <e p="README.md" t="Include" />
+      <e p="ShapefileIO.gh" t="Include" />
     </e>
   </component>
 </project>
